@@ -31,3 +31,8 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
+# si se cambia el nombre del servicio se debe cambiar en los archivos:
+# 1. nginx --> default.conf
+# 2. docker-compose.yml (en caso de existir)
+#     services:
+#       nextjs-app:
